@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0%;
+  font-family: inter;
+}
+.navbar{
+    display: flex;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(7, 1, 1, 0.1);
+  }
+.navbar img{
+ 
+  padding: 35px 50px;
+}  
