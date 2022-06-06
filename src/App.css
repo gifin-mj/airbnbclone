@@ -1,17 +1,65 @@
 *{
   box-sizing: border-box;
+  
 }
 body{
-  margin: 0%;
-  font-family: inter;
+  margin: 0% 25%;
+  box-shadow: 0px 3px 200px rgb(14, 13, 13);
 }
+
 .navbar{
     display: flex;
     height: 100px;
     background: #FFFFFF;
-    box-shadow: 0px 3px 8px rgba(7, 1, 1, 0.1);
+    box-shadow: 0px 3px 20px rgba(7, 1, 1, 0.1);
   }
 .navbar img{
- 
+  
   padding: 35px 50px;
 }  
+section{
+  padding: 30px;
+}
+.hero{
+  
+  font-family: 'Poppins',sans-serif;
+}
+.hero img{
+  width: 400px;
+  height: 150px;
+  margin-left: 90px;
+}
+.hero h1{
+  margin-bottom: 0%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+}
+.hero p{
+  width: 300px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+}
+.gray{
+  color: #918E9B;
+}
+.bold{
+  font-weight: bolder;
+}
+.card{
+  width: 175px;
+  font-size: 12px;
+  line-height: 110%;
+}
+.main-img{
+  width: 175px;
+}
+.card-content{
+  align-items: center;
+}
+.star{
+  width: 14px;
+}
