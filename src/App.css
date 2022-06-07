@@ -2,20 +2,26 @@
   box-sizing: border-box;
   
 }
-body{
-  margin: 0% 25%;
-  box-shadow: 0px 3px 200px rgb(14, 13, 13);
+.app{
+  background-color: white;
+  
 }
+body{
+  background-color: rgb(3, 3, 3);
+  margin: 0% 25%;
+  box-shadow: 0px 3px 500px rgb(43, 34, 80);
+}
+
+
 
 .navbar{
     display: flex;
     height: 100px;
-    background: #FFFFFF;
     box-shadow: 0px 3px 20px rgba(7, 1, 1, 0.1);
   }
 .navbar img{
   
-  padding: 35px 50px;
+  padding: 35px 30px;
 }  
 section{
   padding: 30px;
@@ -26,7 +32,7 @@ section{
 }
 .hero img{
   width: 400px;
-  height: 150px;
+  height: 200px;
   margin-left: 90px;
 }
 .hero h1{
@@ -49,13 +55,25 @@ section{
 .bold{
   font-weight: bolder;
 }
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
 .card{
+  
   width: 175px;
   font-size: 12px;
   line-height: 110%;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; 
 }
 .main-img{
   width: 175px;
+  height: 220px;
+  border-radius: 7px;
 }
 .card-content{
   align-items: center;
