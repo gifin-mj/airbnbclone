@@ -29,11 +29,13 @@ section{
 .hero{
   
   font-family: 'Poppins',sans-serif;
+  overflow-x: auto;
 }
 .hero img{
   width: 400px;
   height: 200px;
   margin-left: 90px;
+  
 }
 .hero h1{
   margin-bottom: 0%;
@@ -69,6 +71,17 @@ section{
   flex: 0 0 auto;         /* ADD */
   display: flex;          /* ADD */
   flex-direction: column; 
+  position: relative;
+}
+.card--badge{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  color: black;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
 .main-img{
   width: 175px;
@@ -80,4 +93,18 @@ section{
 }
 .star{
   width: 14px;
+}
+
+.footer
+{
+    align-items: center;
+    margin-top: 10px;
+    display: block  ;
+    height: 50px;
+    box-shadow: 5px 10px 8px 10px #07040e;
+    
+}
+.footer h5{
+  text-align: center;
+  color: crimson;
 }

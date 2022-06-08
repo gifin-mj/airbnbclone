@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from './Components/Card';
+import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navbar from './Components/Navbar';
 import datas from './data.js'
@@ -13,7 +14,7 @@ export default function App() {
   )*/
   //or
 
-  const cards =datas.map(data => {
+  /*const cards =datas.map(data => {
     return(
       <Card 
             key={data.id}
@@ -22,7 +23,19 @@ export default function App() {
             review={data.review} 
             country={data.country}
             short={data.short} 
-            price={data.price} />
+            price={data.price}
+            openspots={data.openSpots} 
+            />
+    )
+  })*/
+  //or
+  const cards =datas.map(data => {
+    return(
+      <Card 
+            key={data.id}
+            //data={data} or
+            {...data}
+            />
     )
   })
 
@@ -34,6 +47,7 @@ export default function App() {
           <section className="cards-list">
               {cards}
           </section>
+          <Footer/>
     </div>
   );
 }
